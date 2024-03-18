@@ -1,0 +1,17 @@
+public class EmployeeDetails extends Person {
+    private String empId;
+    private double salary;
+
+    public EmployeeDetails(String name, String dob, String empId, double salary) {
+        super(name, dob);
+        this.empId = empId;
+        this.salary = salary;
+    }
+
+    public void displayEmployeeDetails() {
+        super.displayName();
+        super.displayAge("YYYY-MM-DD"); // Assuming date of birth is in YYYY-MM-DD format
+        System.out.println("Employee ID: " + empId);
+        System.out.println("Salary: " + salary);
+    }
+} 
