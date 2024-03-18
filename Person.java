@@ -14,6 +14,7 @@ public class Person {
         System.out.println("Name: " + name);
     }
 
+    @SuppressWarnings("unused")
     public void calculateAge(String dateFormat) {
         DateTimeFormatter formatter;
         if (dateFormat.equals("dd-mm-yyyy")) {
